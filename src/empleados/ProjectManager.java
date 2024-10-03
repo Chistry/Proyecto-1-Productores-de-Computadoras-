@@ -9,10 +9,11 @@ package empleados;
  * @author chris
  */
 
-public class ProductManager extends Thread {
+public class ProjectManager extends Thread {
     private int salarioPorHora = 40;
     private int faltas = 0;
 
+    @Override
     public void run() {
         for (int hora = 0; hora < 24; hora++) {
             if (hora < 16) {
